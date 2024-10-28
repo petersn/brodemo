@@ -212,8 +212,8 @@ function Card(props: { card: Card }) {
         top: 180,
       }}>{props.card.mainText}</p>
       {/* We put attack and defense in little circles in the bottom left and bottom right. */}
-      <StatCircle value={props.card.atk} right={10} bottom={10} />
-      <StatCircle value={props.card.def} right={50} bottom={10} />
+      <StatCircle value={props.card.atk} right={50} bottom={10} />
+      <StatCircle value={props.card.def} right={10} bottom={10} />
     </div>
   );
 }
