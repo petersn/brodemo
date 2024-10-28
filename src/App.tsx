@@ -169,6 +169,8 @@ function StatCircle(props: { value: number, right: number, bottom: number }) {
       justifyContent: 'center',
       alignItems: 'center',
       position: 'absolute',
+      // These are the two key lines where we pass along the offsets
+      // to place this box at, relative to the surrounding `position: relative` div.
       right: props.right,
       bottom: props.bottom,
       // Prevent selection of the text inside the circle.
@@ -207,7 +209,7 @@ function Card(props: { card: Card }) {
         fontSize: 20,
       }}>{props.card.name}</div>
       <p style={{
-        // This placement always starts the card text 200px down from the top.
+        // This placement always starts the card text 180px down from the top.
         position: 'absolute',
         top: 180,
       }}>{props.card.mainText}</p>
